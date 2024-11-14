@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #7C83B1;
+    font-size: 24px;
+    background-image: url('latar3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #7C83B1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s;
+    padding: 8px 20px;
+    position: relative;
+}
+
+/* Animasi Slide pada Menu Navigasi */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #535EA6;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.logout-button {
+    font-weight: 600;
+    color: #4a4fa8;
+    padding: 8px 20px;
+    border: 2px solid #4a4fa8;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    margin-left: 20px;
+    transform: translateY(0);
+}
+
+/* Animasi Hover pada Tombol Logout */
+.logout-button:hover {
+    background-color: #4a4fa8;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(74, 79, 168, 0.3);
+}
+
+.profile-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.photo-container {
+    margin-bottom: 20px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+#show-more {
+    background-color: #535EA6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.more-content {
+    display: none;
+    text-align: left;
+}
+
+.teacher-profile {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-profile .profile-photo-placeholder {
+    flex: 0 0 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.teacher-profile .profile-photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.teacher-profile .info {
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 10px;
+    background-color: #7C83B1;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 150px;
+}
+
+
+.info h2, p{
+    border: 1px solid #535EA6;
+    text-align: center;
+    padding: 5px;
+    background-color:#535EA6;
+    color:white;
+}
+
+h5{
+    font-size:small;
+}
+
+.teacher-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-content {
+    display: none;
+    text-align: left;
+}
+
